@@ -1,0 +1,28 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
+body {
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+.hero {
+  height: 70vh;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__base,
+  &__converted {
+    min-width: 40vw;
+    min-height: 40vh;
+    margin: 2em;
+    & .text input{
+        height: 30vh;
+        font-size: 10vh;
+    }
+  }
+}

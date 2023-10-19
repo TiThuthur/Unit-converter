@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="asset/css/style.css" />
+  </head>
+  <body>
+    <h1 class="title is-primary is-9">Unit converter</h1>
+    <div class="hero is-info">
+      <h2 class="subtitle is-5">Convert the base unit in the unit you want.</h2>
+      <div class="container">
+        <div class="box container__base">
+          <p class="text">choose the base unit</p>
+          <select id="base_unit" onchange="getBase()">
+            select a unit
+          </select>
+          <input type="text" name="base_unit_text" id="base_unit_text" />
+        </div>
+        <div class="box container__converted">
+          <p class="text">choose the converted unit</p>
+          <select id="converted_unit" onchange="getBase()">
+            select a unit
+          </select>
+          <div class="text">
+          <input
+            type="text"
+            name="converted_unit_text"
+            id="converted_unit_text"
+          />
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
