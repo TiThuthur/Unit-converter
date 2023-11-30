@@ -3,47 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Convertisseur d'unités</title>
     <link rel="stylesheet" href="asset/css/style.css" />
+    <script src="asset/js/script.js" async></script>
   </head>
   <body>
-    <h1 class="title">Unit converter</h1>
-    <div class="is-aqua">
-      <h2>Convert the weight in the unit you want.</h2>
-      <div class="container">
-        <div class="container__base">
-          <label
-            >choose the base unit
-            <select id="base_unit" onchange="getBase()">
-              <optgroup>
-                <option value="kg">kg</option>
-                <option value="g">g</option>
-                <option value="mg">mg</option>
-                <option value="lbs">lbs</option>
-              </optgroup>
-            </select>
-          </label>
-          <input type="text" name="base_unit_text" id="base_unit_text" />
-        </div>
-        <div class="card container__converted">
-          <label class="text"
-            >choose the converted unit
-            <select id="converted_unit" onchange="getBase()">
-              <optgroup>
-                <option value="kg">kg</option>
-                <option value="g">g</option>
-                <option value="mg">mg</option>
-                <option value="lbs">lbs</option>
-            </select>
-          </label>
-          <div class="text">
-            <input
-              type="text"
-              name="converted_unit_text"
-              id="converted_unit_text"
-            />
-          </div>
-        </div>
+    <div>
+      <h1 class="title poids">Convertisseur de poids:</h1>
+    </div>
+    <div class="container">
+      <div class="form-group">
+        <label>Grammes</label>
+        <input type="text" id="grammes" placeholder="Grammes" />
+      </div>
+      <div class="form-group">
+        <label>Kilos</label>
+        <input type="text" id="kilos" placeholder="Kilos" />
+      </div>
+      <div class="form-group">
+        <label>Livres</label>
+        <input type="text" id="livres" placeholder="livres" />
+      </div>
+    </div>
+    <div>
+      <h1 class="title volume">Convertisseur de volume:</h1>
+    </div>
+    <div class="container">
+      <div class="form-group">
+        <label>Grammes</label>
+        <input type="text" id="grammes" placeholder="Grammes" />
+      </div>
+      <div class="form-group">
+        <label>Kilos</label>
+        <input type="text" id="kilos" placeholder="Kilos" />
+      </div>
+      <div class="form-group">
+        <label>Livres</label>
+        <input type="text" id="livres" placeholder="livres" />
       </div>
     </div>
   </body>
